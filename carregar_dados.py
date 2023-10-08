@@ -7,7 +7,8 @@ def carregar_dados(arquivo):
 
     conexoes = []
     for i in range(2, 2 + n):
-        conexoes.append(list(map(int, linhas[i].split(', '))))
+        linha = linhas[i].split(', ')
+        conexoes.append([int(tempo) for tempo in linha])
 
     m = int(linhas[2 + n])
     entregas = []

@@ -8,7 +8,7 @@ from leilao_v3 import leilao_v3
 def main():
     destinos, conexoes, entregas = carregar_dados('dados.txt')
 
-    inicio = perf_counter()  # chama a função time diretamente
+    inicio = perf_counter()
     sequencia_entregas_v1, lucro_total_v1 = leilao(destinos, conexoes, entregas)
     fim = perf_counter()
     performance_v1 = (fim - inicio)
